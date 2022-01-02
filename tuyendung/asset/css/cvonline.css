@@ -1,0 +1,374 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@200,300,400,500,600,700&display=swap');
+
+:root{
+    --main:#f1f2f6;
+    --bg-clr:#54a0ff;
+    --bg-clr2:#70a1ff;
+    --bg-clr3:#f1f2f6;
+    --text-clr2:#222f3e;
+    --white:#ffff;
+    --box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.2);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all 0.3s linear;
+    font-family: 'Roboto', sans-serif;
+    border: none;
+    outline: none;
+    text-decoration: none !important;
+    list-style: none;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+html::-webkit-scrollbar{
+    display: none;
+}
+
+body{
+    background: var(--main);
+}
+
+.heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 6rem;
+    color: var(--text-clr2);
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.heading h2{
+    font-size: 3rem;
+    padding-bottom: 1.5rem;
+}
+
+.heading h1{
+    font-size: 3.5rem;
+}
+
+.heading h3{
+    font-size: 2rem;
+    padding-bottom: 2.5rem;
+}
+
+.container{
+    max-width: 1230px;
+    padding: 1.5rem;
+    margin: 0 auto;
+}
+
+.cv-banner {
+    padding-top: 10rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cv-left .cv-text span{
+    display: block;
+    font-size: 4rem;
+    text-transform: capitalize;
+    padding-bottom: .5rem;
+}
+
+.cv-left p{
+    font-size: 1.5rem;
+    color: var(--text-clr2);
+    padding-bottom: 2.5rem;
+}
+
+.cv-left .cv-banner-btn{
+    padding: 1.5rem 2rem ;
+    background: var(--bg-clr);
+    color: var(--white);
+    font-size: 1.5rem;
+    border-radius: .5rem;
+}
+
+.cv-left .cv-item{
+    display: flex;
+    margin-top: 2.5rem;
+}
+
+.cv-item .cv-bx{
+    margin-right: 1.5rem;
+}
+
+.cv-item .cv-bx h2{
+    font-size: 2.5rem;
+}
+
+.cv-item .cv-bx span{
+    font-size: 1.5rem;
+}
+
+
+
+
+.cv-content-1{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(50rem, 1fr));
+    gap: 1.5rem;
+    padding-top: 4rem;
+}
+
+.cv-content-1 .content1-left{
+    font-size: 2rem;
+}
+
+.cv-content-1 .content1-right{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    gap: 1.5rem;
+}
+
+.content1-right h3{
+    font-size: 2rem;
+    margin-top: 1.5rem;
+}
+
+.content1-right p{
+    font-size: 1.5rem;
+    margin-top: 1rem;
+}
+.cv-content-2 .container{
+    padding-top: 4rem;
+}
+
+.cv-content-2 .heading h1{
+    color: black;
+    padding-bottom: 3rem;
+}
+
+.content2-items{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(37rem, 1fr));
+    gap: 1.5rem;
+}
+
+.content2-items .content2-bx{
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    background-color: white;
+    border-radius: .5rem;
+    box-shadow: var(--box-shadow);
+}
+
+.content2-bx .content2-number{
+    color: var(--bg-clr);
+    line-height: 5rem;
+    text-align: center;
+    margin-right: .5rem;
+    font-size: 4rem;
+}
+
+.content2-bx .content2-text{
+    color: var(--bg-clr);
+}
+
+.content2-text h2{
+    font-size: 2rem;
+    padding-bottom: .5rem;
+}
+
+.content2-text p{
+    font-size: 1.5rem;
+}
+
+/* content3 
+*/
+
+
+.cv-content-3{
+    padding-top: 10rem;
+}
+
+.cv-content-3 .heading h1{
+    font-size: 3.5rem;
+    color: black;
+    padding-bottom: 1.5rem;
+}
+
+.cv-content-3 .heading p{
+    font-size: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+.cv-content-3 .heading .content3-btn{
+    padding: 1rem 2.5rem;
+    border-radius: .5rem; 
+    background-color: var(--bg-clr);
+    color: var(--white);
+    font-size: 1.5rem;
+    margin-bottom: 4rem;
+}
+
+.content3-slider .content3-image{
+    width: 25rem;
+    height: 30rem;
+}
+
+.content3-slider .content3-image:hover{
+    box-shadow: var(--box-shadow);
+}
+
+.swiper-button-next,
+.swiper-button-prev{
+    height: 4rem;
+    width: 4rem;
+    color: var(--bg-clr);
+    border: .1rem solid var(--text-clr2);
+    background: var(--white);
+}
+
+
+.swiper-button-next::after,
+.swiper-button-prev::after{
+    font-size: 2rem;
+}
+
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover{
+    background: var(--text-clr2);
+    color: var(--white);
+}
+
+
+
+
+
+
+
+/* content 4/////////////////// */
+
+.cv-content-4{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(55rem, 1fr));
+    gap: 1.5rem;
+    padding-top: 10rem;
+}
+
+.cv-content-4 .content4-left .content3-text{
+    font-size: 3rem;
+}
+
+.cv-content-4 .content4-left .content4-image{
+    width: 40rem;
+    height: 40rem;
+}
+
+.cvonl-form .cv-form2-heading{
+    font-size: 2rem;
+    text-transform: capitalize;
+    padding-bottom: 2rem;
+}
+
+.cvonl-form .feild{
+    padding-bottom: 2rem;
+}
+
+.cvonl-form .feild .cv-btn{
+    width: 40rem;
+}
+
+.cvonl-form .feild input{
+    border: .1rem solid gainsboro;
+    padding: 1.5rem;
+    margin-top: .5rem;
+    border-radius: .5rem;
+}
+
+.cvonl-form .feild h3{
+    font-size: 1.5rem ;
+    text-transform: capitalize;
+}
+
+.cvonl-form h2{
+    font-weight: 400;
+}
+
+.cvonl-form .login-cv{
+    padding: 1rem 15rem;
+    margin-top: 1rem;
+    background: var(--bg-clr);
+    color: var(--white);
+    font-size: 1.5rem;
+    border-radius: .5rem;
+    cursor: pointer;
+}
+
+.cvonl-form .option{
+    font-size: 1.5rem;
+    padding-top: 1rem;
+}
+
+.cvonl-form .login-social{
+    display: flex;
+}
+
+.login-social button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .5rem 2rem;
+    margin: 2rem;
+    border-radius: .5rem;
+    cursor: pointer;
+}
+
+.login-social button span{
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-weight: 500;
+    padding-left: .5rem;
+}
+
+
+
+
+
+
+
+@media (max-width:768px){
+
+    .cv-banner{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .cv-image{
+        width: 70%;
+        height: 70%;
+    }
+
+    .cv-content-1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .content1-left{
+        width: 100%;
+        text-align: center;
+        font-size: 1.5rem;
+    }
+
+    .cv-content-4{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    } 
+
+}

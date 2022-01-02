@@ -1,0 +1,42 @@
+.service{
+    padding-bottom: 4rem;
+
+    .service-content{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+        gap: 1.5rem;
+
+        .service-box{
+            display: flex;
+
+            .service-icon{
+               color: $secondary;
+                i{
+                    font-size: 1.5rem;
+                }
+
+            }
+
+            .service-text{
+                padding-left: 1rem;
+
+                h3{
+                    font-size: 1.2rem;
+                    padding-bottom: .5rem;
+                    font-weight: 500;
+                    text-transform: uppercase;
+                }
+
+                p{
+                    font-size: 1rem;
+                    color: $light-grey;
+                }
+        
+            }
+
+
+
+        }
+    }
+
+}

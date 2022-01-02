@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@200,300,400,500,600,700&display=swap');
+
+:root{
+    --main:#f1f2f6;
+    --bg-clr:#54a0ff;
+    --bg-clr2:#70a1ff;
+    --bg-clr3:#f1f2f6;
+    --text-clr2:#222f3e;
+    --white:#ffff;
+    --box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.2);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all 0.3s linear;
+    font-family: 'Roboto', sans-serif;
+    border: none;
+    outline: none;
+    text-decoration: none !important;
+    list-style: none;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+html::-webkit-scrollbar{
+    display: none;
+}
+
+body{
+    background: var(--main);
+}
+
+.heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 6rem;
+    color: var(--text-clr2);
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.heading h2{
+    font-size: 3rem;
+    padding-bottom: 1.5rem;
+}
+
+.heading h1{
+    font-size: 3.5rem;
+}
+
+.heading h3{
+    font-size: 2rem;
+    padding-bottom: 2.5rem;
+}
+
+.container{
+    max-width: 1230px;
+    padding: 1.5rem;
+    margin: 0 auto;
+}
+
+.job-banner{
+    padding-top: 10rem;
+}
+
+.job-search{
+    margin-top: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-icon{
+    width: 4rem;
+    height: 4rem;
+    font-size: 2rem;
+    text-align: center;
+    background: var(--white);
+    line-height: 4rem;
+    color: var(--bg-clr);
+}
+
+.job-search .in-job{
+    width: 40rem;
+    height: 4rem;
+    font-size: 1.5rem;
+    margin-right: 1.5rem;
+}
+
+.job-search select{
+    width: 10rem;
+    height: 4rem;
+    font-size: 1.5rem;
+    margin-right: 1.5rem;
+}
+
+.job-search select option{
+    border: none;
+    outline: none;
+}
+
+.job-search .search-btn{
+    width: 8rem;
+    height: 4rem;
+    border-radius: .5rem;
+    color: var(--white);
+    font-size: 1.5rem;
+    background: var(--bg-clr);
+    cursor: pointer;
+}
+
+
+.job-key{
+    padding-top: 6rem;
+}
+
+.job-key .list-key{
+    display: flex;
+    justify-content: center;
+}
+
+.list-key .key-btn{
+    margin: 1.5rem;
+    font-size: 1.5rem;
+    color: var(--bg-clr);
+}
+
+.career-job{
+    padding-top: 4rem;
+}
+
+.career-job .career-bx{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
+    gap: 1.5rem;
+}
+
+.career-bx .career-items{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.career-items span{
+    font-size: 1.5rem;
+    color: var(--text-clr2);
+    margin-bottom: 1rem;
+    cursor: pointer;
+}
+
+.career-items span:hover{
+    padding-left: .5rem;
+    color: var(--bg-clr);
+}
+
+.job-comp{
+    padding-top: 4rem;
+}
+
+.job-comp .job-comp-bx{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+    gap: 1.5rem;
+}
+
+.job-comp-bx .job-comp-items{
+    padding: 1rem;
+    border-radius: .5rem ;
+    background-color: var(--white);
+}
+
+.job-comp-bx .job-comp-items:hover{
+    box-shadow: var(--box-shadow);
+}
+
+.job-comp-items .items-top{
+    display: flex;
+    align-items: center;
+}
+
+.items-top .jc-images{
+    width: 10rem;
+    height: 10rem;
+}
+
+.items-top .jc-images img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.items-top .item-content{
+    margin-left: 2rem;
+}
+
+.items-top .item-content h2{
+    font-size: 2rem;
+    font-weight: 600;
+    padding-bottom: 1rem;
+}
+
+.items-top .item-content h3{
+    font-size: 1.5rem;
+    font-weight: 500;
+    padding-bottom: 1rem;
+}
+
+.items-top .item-content h4{
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: var(--bg-clr);
+}
+
+.items-top i{
+    margin-left: auto;
+    padding-right: 1rem;
+    font-size: 1.5rem;
+    color: var(--bg-clr);
+}
+
+.job-comp-items .items-bottom{
+    border-top: .1rem solid rgb(223, 215, 215);
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.items-bottom .add,
+.items-bottom .time{
+    color: var(--bg-clr);
+}
+
+

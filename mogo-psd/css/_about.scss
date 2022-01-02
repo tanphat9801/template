@@ -1,0 +1,55 @@
+.about-images{
+    padding-top: 10rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(20rem, 1fr));
+    gap: 1.5rem;
+
+    .about-box{
+        width: 100%;
+        height: 25rem;
+
+        &:hover{
+            box-shadow: $box-shadow;
+            transition: .3s all;
+        }
+
+        .about-img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}
+
+.about-text{
+    width: 100%;
+    min-height: 27rem;
+    background-color: $secondary;
+    margin-top: 11rem;
+}
+
+.about-bx{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    
+
+    .text-bx{
+        width: 100%;
+        height: 27rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        border: 0.05rem solid white;
+
+        h1{
+            font-size: 4.5rem;
+            color: white;
+        }
+
+        h4{
+            text-transform: uppercase;
+            color: white;
+        }
+    }
+}

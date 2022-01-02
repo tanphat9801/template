@@ -1,0 +1,62 @@
+.stories-element{
+    margin-top: 4.5rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(20rem,1fr));
+    gap: 1.5rem;
+
+    .stories-box{
+
+        .stories-img{
+            width: 100%;
+            height: 20rem;
+        }
+
+        position: relative;
+
+        .bf-box{
+            position: absolute;
+            background-color: $secondary;
+            width: 60px;
+            height: 60px;
+            bottom: 160px;
+            left: -10px;
+            text-align: center;
+
+            &:hover{
+                bottom: 180px;
+                transition: 0.7s all;
+            }
+
+            h4{
+                color: white;
+                font-size: 1.5rem;
+                font-weight: 600;
+            }
+
+            h5{
+                font-size: 1rem;
+                color: white;
+                text-transform: capitalize;
+            }
+        }
+
+        .stories-content{
+            margin-top: .5rem;
+
+            h4{
+                font-size: 1.5rem;
+                color: $dark;
+            }
+
+            .stories-icon{
+                border-top: .1rem solid $light-grey;
+
+                i{
+                    color: $secondary;
+                    margin: .5rem;
+                }
+            }
+        }
+    }
+}
+

@@ -1,0 +1,49 @@
+
+.container{
+    max-width: 1230px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+
+.heading {
+    padding-top: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    h3{
+        font-size: 2rem;
+        font-family: 'Kaushan Script', cursive;
+        padding-bottom: 1rem;
+    }
+
+    h2{
+        font-size: 2.5rem;
+        text-transform: uppercase;
+        font-weight: 600;
+        padding-bottom: 1rem;
+    }
+
+    .heading-line{
+        width: 3rem;
+        height: .1rem;
+        background-color: $pink;
+        margin-bottom: 1rem;
+    }
+
+    p{
+        text-align: center;
+        color: $light-grey;
+    }
+
+
+}
+
+
+.line{
+    width: 3rem;
+    height: .1rem;
+    background-color: $pink;
+}

@@ -1,0 +1,107 @@
+@import"reset";
+@import"variables";
+@import"global";
+@import"banner";
+@import"about";
+@import"service";
+@import"design";
+@import"service2";
+@import"service2-slide";
+@import"mot";
+@import"work";
+@import"clients";
+@import"stories";
+@import"map";
+@import"footer";
+
+
+@media(max-width:560px){
+
+
+
+    .header #bars{
+        display: block;
+    }
+
+    .header .menu{
+        display: none;
+    }
+
+    .mobile-menu{
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 100%;
+        width: 100%;
+        min-height: 100vh;
+        background-color: #12002F;
+        margin-top: 4rem;
+        transition: .5s all;
+
+
+        li a{
+            color: white;
+            text-transform: uppercase;
+            text-align: center;
+            display: block;
+            width: 100%;
+            max-width: 12rem;
+            margin: 0 auto 1.6rem;
+            margin-top: 1rem;
+            padding: .5rem 1rem;
+            background-color: $dark;
+        }
+    }
+
+    .mobile-menu.active{
+        left: 0;
+    }
+
+
+    .banner-title{
+
+        h3{
+            font-size: 1.5rem;
+        }
+
+        h1,h2{
+            font-size: 3.5rem;
+        }
+
+        .banner-line{
+            width: 2rem;
+            height: .1rem;
+        }
+
+        .banner-btn{
+            font-size: 1rem;
+            padding: .2rem .5rem;
+            text-transform: capitalize;
+        }
+
+    }
+
+    .banner-bottom{
+        .banner-bx{
+            display: flex;
+            justify-content: center;
+            font-size: 1rem;
+        }
+    }
+
+
+    .heading{
+        h3{
+            font-size: 1.5rem;
+        }
+
+        h2{
+            font-size: 2rem;
+        }
+
+        p{
+            font-size: 1rem;
+        }
+    }
+
+}

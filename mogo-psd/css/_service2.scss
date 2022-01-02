@@ -1,0 +1,25 @@
+.service2{
+
+    .heading{
+        padding-bottom: 4rem;
+    }
+
+    .service2-content{
+       display: grid;
+       grid-template-columns: repeat(auto-fit,minmax(25rem,1fr));
+       gap: 1rem;
+
+
+       .service2-text{
+            i{
+                color: $secondary;
+                padding-right: .5rem;
+            }
+            span{
+                color: $secondary;
+            }
+       }
+
+    }
+
+}

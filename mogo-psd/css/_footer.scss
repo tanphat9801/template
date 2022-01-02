@@ -1,0 +1,128 @@
+#footer{
+    margin-top: 2rem;
+
+    .footer-element{
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(20rem,1fr));
+        gap: 1.5rem;
+    }
+
+    #footer-bx1{
+        
+        h1{
+            font-size: 1.5rem;
+            color: $light-grey;
+        }
+        p{
+            font-size: 1rem;
+            color: $light-grey;
+        }
+        h2{
+            font-size: 1.2rem;
+            text-transform: capitalize;
+            padding-bottom: .5rem;
+            border-bottom: .1rem solid $light-grey;
+        }
+
+        h3{
+            font-size: 1.2rem;
+            text-transform: capitalize;
+
+            i{
+                font-size: 1rem;
+                margin: .2rem;
+                color: $secondary;
+            }
+        }
+
+        .search{
+
+            .input{
+                border: .05rem solid rgb(226, 216, 216);
+                padding: .2rem;
+            }
+            .submit{
+                padding: .2rem .5rem;
+                margin-left: -.3rem;
+                text-transform: capitalize;
+                border: .05rem solid $secondary;
+                background-color: $secondary;
+                color: white;
+            }
+
+        }
+
+    }
+
+    #footer-bx2{
+        h3{
+            text-transform: capitalize;
+        }
+
+        .footer-items{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: .5rem;
+
+            .footer-img{
+                width: 8rem;
+                height: 6rem;
+                margin-right: 1rem;
+            }
+
+            .footer-content{
+
+                h4{
+                    font-size: 1rem;
+                }
+                h5{
+                    font-size: 1rem;
+                    color: $light-grey;
+                }
+
+            }
+        }
+
+    }
+
+    #footer-bx3{
+        h3{
+            font-size: 1.5rem;
+            text-transform: uppercase;
+        }
+
+        .images-box{
+            width: 279px;
+            height: 279px;
+
+            .ins-img{
+                width: 90px;
+                height: 90px;
+                object-fit: cover;
+            }
+        }
+
+        h5{
+            font-size: 1rem;
+            color: $light-grey;
+            text-transform: capitalize;
+            font-weight: 300;
+        }
+
+    }
+
+}
+
+.cp{
+    margin-top: 2rem;
+    text-align: center;
+    padding: 1rem;
+    border-top: .1rem solid rgb(202, 202, 202);
+    h3{
+        font-size: 1rem;
+        span{
+            color: $pink;
+        }
+    }
+}
